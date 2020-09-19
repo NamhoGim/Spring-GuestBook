@@ -14,7 +14,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 public class DBConfig implements TransactionManagementConfigurer {
     private static final String DRIVER_CLASS_NAME = "com.mysql.cj.jdbc.Driver";
-    private static final String URL =  "jdbc:mysql://localhost:3306/connectdb?useUnicode=true&characterEncoding=utf8";
+    private static final String URL =  "jdbc:mysql://localhost:3306/connectdb?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
     private static final String USERNAME = "connectuser";
     private static final String PASSWORD = "connect123!@#";
 
